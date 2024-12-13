@@ -952,6 +952,10 @@ p {
   padding-top: 140px;
 }
 
+.blog-img{
+  max-width: 100%;
+}
+
 /* main content */
 .main-content {
   background: #f7f7f7;
