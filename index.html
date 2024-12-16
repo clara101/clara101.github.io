@@ -16,7 +16,7 @@
         </div>
         <div class="links">
             <a href="#" class="active">About</a>
-            <a href="#">Portfolio</a>
+            <a href="javascript:void(0)" onclick="scrollToDiv()">Portfolio</a>
             <a href="#">Contact Me</a>
         </div>
     </nav>
@@ -43,7 +43,7 @@
         </div>
     </div>
 
-    <div class="works">
+    <div id="#portfolio" class="works">
         <div class="left">
             <h3><i class="fas fa-circle"></i> Recent Works</h3>
             <div class="works-list">
@@ -52,21 +52,43 @@
                         <a href=" https://jvasecurity.ph/ "><h5 class="active">JVA Security</h5></a>
                         <p>2024</p>
                     </div>
-                    <p>Security Services</p>
+                    <p>WordPress</p>
                 </div>
                 <div class="item">
                     <div class="work-info">
                         <a href="https://expressmobilityinc.com/"><h5>Express Mobility Inc</h5></a>
                         <p>2024</p>
                     </div>
-                    <p>Valet Parking</p>
+                    <p>WordPress</p>
                 </div>
                 <div class="item">
                     <div class="work-info">
                         <a href="https://estatemarketinternational.com/"><h5>Estate Market International</h5></a>
                         <p>2023</p>
                     </div>
-                    <p>Real Estate</p>
+                    <p>WordPress</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <a href="https://www.mccormick.com.ph/"><h5>Mccormick Store PH</h5></a>
+                        <p>2018</p>
+                    </div>
+                    <p>Shopify</p>
+                    
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <a href="https://nbastore.com.ph/"><h5>NBA Store PH</h5></a>
+                        <p>2018</p>
+                    </div>
+                    <p>Shopify</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <a href="https://plainsandprints.com/"><h5>Plains and Prints</h5></a>
+                        <p>2018</p>
+                    </div>
+                    <p>Shopify</p>
                 </div>
             </div>
         </div>
@@ -79,24 +101,33 @@
 
             </div>
             <div class="item">
-                <a href="#">Design Solutions</a>
-                <p>Ways to solve design challenges with creative approaches.</p>
+                <a href="https://gist.github.com/clara101/7881bc404cdca3daff47b46fa8ac1cbe">Gists</a>
+                <p>Deploy Rails 4 to AWS EC2(Ubuntu 14.04.4 LTS). Nginx, Puma, Capistrano3, PostgreSQL, RVM.</p>
             </div>
             <div class="item">
-                <a href="#">Responsive Design</a>
-                <p>Ensuring a seamless user experience across all devices.</p>
+                <a href="https://github.com/clara101?tab=repositories">Repo</a>
+                <p>List of my github repositories 2014 - 2024. (React, Ruby, HTML, CSS, JavaScript)</p>
             </div>
             <div class="item">
-                <a href="#">Research and Testing</a>
-                <p>Using data-driven insights to inform design decisions.</p>
+                <a href="#">WP Customized Theme</a>
+                <p>Coming Soon...</p>
             </div>
             <div class="item">
-                <a href="#">Collaborative Projects</a>
-                <p>Working with cross-functional teams to bring ideas to life.</p>
+                <a href="#">WP Customized Plug-in</a>
+                <p>Coming Soon...</p>
             </div>
         </div>
 
     </div>
+
+    <script>
+        function scrollToDiv() {
+            const div = document.querySelector('.works');  // Target the first element with this class
+            if (div) {
+                div.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        </script>
 
     <footer>
         <a href="#">My Portfolio</a>
