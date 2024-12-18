@@ -1,144 +1,785 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Claire Ann Bayoda</title>
-</head>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-<body>
-    <nav>
-        <div class="logo">
-            <i class="fas fa-code"></i>
-        </div>
-        <div class="links">
-            <a href="#" class="active">About</a>
-            <a href="javascript:void(0)" onclick="scrollToDiv()">Portfolio</a>
-            <a href="#">Contact Me</a>
-        </div>
-    </nav>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <div class="about">
-        <div class="left">
-            <h3>Senior Web Developer & Technical Project Manager</h3>
-            <div class="info">
-                <h2>I'm Claire Bayoda</h2>
-                <p>My responsibilities encompass both Project Management and Technical Development.</p>
-                <div class="buttons">
-                    <button class="hire">
-                        Hire me <i class="fas fa-plus"></i>
-                    </button>
-                    <button class="email">
-                        Copy Email <i class="far fa-copy"></i>
-                    </button>
-                </div>
-            </div>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: Folio - v4.1.0
+  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo"
+          ><img src="assets/img/logo.png" alt="" class="img-fluid"
+        /></a>
+        <!-- Uncomment below if you prefer to use an text logo -->
+        <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Agile Workshops</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="scrum-workshop-batch1.html">Batch 1</a></li>
+                <li><a href="scrum-workshop-batch2.html">Batch 2</a></li>
+                <li><a href="scrum-workshop-batch3.html">Batch 3</a></li>
+                <li><a href="scrum-workshop-batch4.html">Batch 4</a></li>
+              </ul>
+            </li>
+            <li>
+                <a class="nav-link scrollto" href="#portfolio">Portfolio Projects</a>
+              </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Agile Fundamentals</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="">Agile 12 Principles</a></li>
+                <li><a href="">Benefits of Agile</a></li>
+                <li><a href="">Challenges of using Agile</a></li>
+                <li><a href="">Scrum Framework</a></li>
+                <li><a href="">Kanban</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <div id="hero" class="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>
+            I'm
+            <span
+              class="typed"
+              data-typed-items="Claire Bayoda, Freelancer, Agile Enthusiast, Techpreneur"
+            ></span>
+          </h1>
+          <p>Agile Advocate, Technopreneur, Software Engineer</p>
+
+          <ul class="list-unstyled list-social">
+            <li>
+              <a href="https://www.facebook.com/clairebyd/"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/cbayoda"
+                ><i class="bi bi-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/codewithclaire/"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/claire-bayoda-005b8591/"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-        <div class="right">
-            <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a>
-            <img src="assets/profile.png">
-        </div>
+      </div>
     </div>
+    <!-- End Hero -->
 
-    <div id="#portfolio" class="works">
-        <div class="left">
-            <h3><i class="fas fa-circle"></i> Recent Works</h3>
-            <div class="works-list">
-                <div class="item">
-                    <div class="work-info">
-                        <a href=" https://jvasecurity.ph/ "><h5 class="active">JVA Security</h5></a>
-                        <p>2024</p>
-                    </div>
-                    <p>WordPress</p>
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <div id="about" class="paddsection">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-4">
+              <div class="div-img-bg">
+                <div class="about-img">
+                  <img
+                    src="assets/img/qbe/yep4.jpeg"
+                    class="img-responsive"
+                    alt="me"
+                  />
                 </div>
-                <div class="item">
-                    <div class="work-info">
-                        <a href="https://expressmobilityinc.com/"><h5>Express Mobility Inc</h5></a>
-                        <p>2024</p>
-                    </div>
-                    <p>WordPress</p>
-                </div>
-                <div class="item">
-                    <div class="work-info">
-                        <a href="https://estatemarketinternational.com/"><h5>Estate Market International</h5></a>
-                        <p>2023</p>
-                    </div>
-                    <p>WordPress</p>
-                </div>
-                <div class="item">
-                    <div class="work-info">
-                        <a href="https://www.mccormick.com.ph/"><h5>Mccormick Store PH</h5></a>
-                        <p>2018</p>
-                    </div>
-                    <p>Shopify</p>
-                    
-                </div>
-                <div class="item">
-                    <div class="work-info">
-                        <a href="https://nbastore.com.ph/"><h5>NBA Store PH</h5></a>
-                        <p>2018</p>
-                    </div>
-                    <p>Shopify</p>
-                </div>
-                <div class="item">
-                    <div class="work-info">
-                        <a href="https://plainsandprints.com/"><h5>Plains and Prints</h5></a>
-                        <p>2018</p>
-                    </div>
-                    <p>Shopify</p>
-                </div>
+              </div>
             </div>
-        </div>
 
-        <div class="right">
-            <div class="item">
-                <a href="#">About My Work</a>
-                <p>I specialize in creating high-performance, responsive websites and web applications, particularly within the SaaS industry. My expertise spans front-end and back-end development, utilizing technologies such as HTML, CSS, JavaScript, MYSQL, PostgreSQL, PHP, and Ruby on Rails. I have extensive experience with content management systems like WordPress, Magento and Shopify and popular page builders such as Elementor and Divi, where I develop custom themes, plugins, and advanced features tailored to client needs.
+            <div class="col-lg-7">
+              <div class="about-descr">
+                <p class="p-heading">
+                  Hello, I’m Claire, a Certified Agile Practioner committed to driving Agile transformation within organizations.
                 </p>
+                <p class="separator">
+                  Experienced Scrum Master with 5+ years in the SaaS industry, including 5 years as a Software Engineer, with expertise
+in Agile & Waterfall methodologies such as Scrum, Kanban, and the Scaled Agile Framework (SAFe). </p>
+<p> Over the past 5 years, I've had the privilege of supporting multiple teams and organizations to deliver value iteratively by advocating Agile principles, facilitating Scrum ceremonies, and removing impediments. My role also involves aligning team efforts with business goals, ensuring stakeholder transparency, and fostering a culture of continuous improvement. </p>
+<p>I began my career as a Software Engineer, which has given me a strong technical foundation and a deep understanding of the development process. This allows me to bridge the gap between technical teams and business stakeholders, ensuring that projects are not only feasible from a technical standpoint but also aligned with broader business objectives. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About Section -->
 
+      <!-- ======= Services Section ======= -->
+      <div id="services">
+        <div class="container">
+          <div
+            class="services-slider swiper-container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="services-block">
+                  <i class="bi bi-briefcase"></i>
+                  <span>PRODUCT VISION</span>
+                  <p class="separator">
+                    The Product vision describes a future state of the Product
+                    and what problems it tries to resolve or what ambitions it
+                    tries to fulfill
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="services-block">
+                  <i class="bi bi-card-checklist"></i>
+                  <span>RELEASE PLAN</span>
+                  <p class="separator">
+                    In Agile release planning, you prepare for staged releases
+                    and then break those down into several different sprints or
+                    iterations.
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="services-block">
+                  <i class="bi bi-bar-chart"></i>
+                  <span>PRODUCT ROADMAP</span>
+                  <p class="separator">
+                    A product roadmap is a plan of action for how a product or
+                    solution will evolve over time.
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="services-block">
+                  <i class="bi bi-binoculars"></i>
+                  <span>SPRINT PLANNING</span>
+                  <p class="separator">
+                    The purpose of sprint planning is to define what can be
+                    delivered in the sprint and how that work will be achieved.
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="services-block">
+                  <i class="bi bi-brightness-high"></i>
+                  <span>AGILE PLANNING</span>
+                  <p class="separator">
+                    Agile planning is a project planning method that estimates
+                    work using self-contained work units called iterations or
+                    sprints.
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="services-block">
+                  <i class="bi bi-calendar4-week"></i>
+                  <span>FACILITATION</span>
+                  <p class="separator">
+                    Facilitation techniques involve getting people together to
+                    create new knowledge.
+                  </p>
+                </div>
+              </div>
+              <!-- End testimonial item -->
             </div>
-            <div class="item">
-                <a href="https://gist.github.com/clara101/7881bc404cdca3daff47b46fa8ac1cbe">Gists</a>
-                <p>Deploy Rails 4 to AWS EC2(Ubuntu 14.04.4 LTS). Nginx, Puma, Capistrano3, PostgreSQL, RVM.</p>
-            </div>
-            <div class="item">
-                <a href="https://github.com/clara101?tab=repositories">Repo</a>
-                <p>List of my github repositories 2014 - 2024. (React, Ruby, HTML, CSS, JavaScript)</p>
-            </div>
-            <div class="item">
-                <a href="#">WP Customized Theme</a>
-                <p>Coming Soon...</p>
-            </div>
-            <div class="item">
-                <a href="#">WP Customized Plug-in</a>
-                <p>Coming Soon...</p>
-            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <!-- End Services Section -->
+
+      <!-- ======= Journal Section ======= -->
+      
+      <div id="journal" class="text-left paddsection">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>Agile Scrum Workshop</h2>
+          </div>
         </div>
 
+        <div class="container">
+          <div class="journal-block">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="journal-info">
+                  <a href="scrum-workshop-batch1.html"><img
+                      src="assets/img/qbe/batch1.jpg"
+                      class="img-responsive"
+                      alt="img"
+                  /></a>
+
+                  <div class="journal-txt">
+                    <h4>
+                      SCRUM WORKSHOP BATCH 1
+                    </h4></a>
+                    <p class="separator">
+                     Agile Scrum Workshop Batch 1: Transformation & Operational Execellence Team and Finance Division
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="journal-info">
+                  <a href="scrum-workshop-batch2.html"> <img
+                      src="assets/img/qbe/batch2.jpg"
+                      class="img-responsive"
+                      alt="img"
+                  /></a>
+
+                  <div class="journal-txt">
+                    <h4>
+                      SCRUM WORKSHOP BATCH 2
+                    </h4>
+                    <p class="separator">
+                      Agile Scrum Workshop Batch 2: Enterprise Services and Operational Division
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="journal-info">
+                  <a href="scrum-workshop-batch3.html"> <img
+                      src="assets/img/qbe/batch3.jpg"
+                      class="img-responsive"
+                      alt="img"
+                  /></a>
+
+                  <div class="journal-txt">
+                    <h4>
+                      SCRUM WORKSHOP BATCH 3
+                    </h4>
+                    <p class="separator">
+                      Agile Scrum Workshop Batch 1: Transformation & Operational Execellence Team and Finance Division
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="journal-info">
+                  <a href="scrum-workshop-batch4.html"> <img
+                      src="assets/img/qbe/batch4.jpg"
+                      class="img-responsive"
+                      alt="img"
+                  /></a>
+
+                  <div class="journal-txt">
+                    <h4>
+                      SCRUM WORKSHOP BATCH 4
+                    </h4>
+                    <p class="separator">
+                      Agile Scrum Workshop Batch 1: Transformation & Operational Execellence Team and Finance Division
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
 
-    <script>
-        function scrollToDiv() {
-            const div = document.querySelector('.works');  // Target the first element with this class
-            if (div) {
-                div.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-        </script>
-
-    <footer>
-        <a href="#">My Portfolio</a>
-        <div class="socials">
-            <a href="https://github.com/clara101">Github</a>
-            <a href="https://www.linkedin.com/in/claire-bayoda-005b8591/overlay/1730814645122/single-media-viewer/?profileId=ACoAABOSvcUBOCogeLyDj_VWdFWn03A4vVMz48g">Publicity</a>
-            <a href="https://www.linkedin.com/in/claire-bayoda-005b8591/">LinkedIn</a>
+      <div id="journal" class="text-left paddsection">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>Awards & Events</h2>
+          </div>
         </div>
-        <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a>
-    </footer>
 
-</body>
+        <div class="container">
+          <div class="journal-block">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="journal-info">
+                  <img
+                      src="assets/img/qbe/award1.jpeg"
+                      class="img-responsive"
+                      alt="img"
+                  />
 
+                  <div class="journal-txt">
+                    <h4>
+                      Above and Beyond Award 
+                    </h4>
+                    <p class="separator">
+                      Above and Beyond Award GSSC Automation Center of Execellence Team
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="journal-info">
+                  <img
+                      src="assets/img/qbe/award2.jpeg"
+                      class="img-responsive"
+                      alt="img"
+                  />
+
+                  <div class="journal-txt">
+                    <h4>
+                      Transformation and Operational Execellence Award
+                    </h4>
+                    <p class="separator">
+                     
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="journal-info">
+                  <img
+                      src="assets/img/qbe/yep3.jpeg"
+                      class="img-responsive"
+                      alt="img"
+                  />
+
+                  <div class="journal-txt">
+                    <h4>
+                      1st Runner Up Hackathon
+                      
+                    </h4>
+                    <p class="separator">
+                      IMPACTHUB MANILA: 1st Runner Up
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    
+      <!-- End Journal Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <div id="portfolio" class="paddsection">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>My Portfolio</h2>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <!--<ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-card">Card</li>
+                <li data-filter=".filter-web">Web</li>
+              </ul>-->
+            </div>
+          </div>
+
+          <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <img
+                src="assets/img/portfolio/portfolio-1.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>PowerPlant</h4>
+                <p>
+                  An E-commerce website implemented using Content Management
+                  System (Magento 1.9) http://www.powerplantmall.com/
+                </p>
+                <a
+                  href="assets/img/portfolio/portfolio-1.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="App 1"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <!--<a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>-->
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <img
+                src="assets/img/portfolio/portfolio-2.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>PLAINS AND PRINTS</h4>
+                <p>
+                  An E-commerce website for Clothes. (Magento 1.9)
+                  https://www.plainsandprints.com/
+                </p>
+                <a
+                  href="assets/img/portfolio/portfolio-2.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Web 3"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <!--<a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>-->
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <img
+                src="assets/img/portfolio/portfolio-3.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>CLOUDBIZ ECOMMERCE & WAREHOUSE</h4>
+                <p>
+                  Ecommerce - A web system like AliExpress used for onboarded
+                  dropshippers to purchase companies’ products, check payouts
+                  and more.
+                </p>
+                <a
+                  href="assets/img/portfolio/portfolio-3.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="App 2"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <!--<a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>-->
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <img
+                src="assets/img/portfolio/portfolio-4.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>UNIONBANK HOME LOAN</h4>
+                <p>
+                  An online retail loan application for Homes with online form
+                  application and fast approval.
+                </p>
+                <a
+                  href="assets/img/portfolio/portfolio-4.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Card 2"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <!--<a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>-->
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <img
+                src="assets/img/portfolio/portfolio-5.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>CLOUDBIZ ECOMMERCE & WAREHOUSE</h4>
+                <p>
+                  Warehouse Fulfilment - A web system to check products being
+                  handled, Stored, Inventoried, delivered by riders and handle
+                  riders.
+                </p>
+                <a
+                  href="assets/img/portfolio/portfolio-5.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Web 2"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <!--<a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>-->
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <img
+                src="assets/img/portfolio/portfolio-6.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>TRASHCASH APP</h4>
+                <p>
+                  TrashCash is an AI-based waste recognition app that ensure
+                  plastic waste are properly sorted and intelligently
+                  identified.
+                </p>
+                <a
+                  href="assets/img/portfolio/portfolio-6.jpg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="App 3"
+                  ><i class="bx bx-plus"></i
+                ></a>
+                <!--<a
+                  href="portfolio-details.html"
+                  class="details-link"
+                  title="More Details"
+                  ><i class="bx bx-link"></i
+                ></a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <!--
+      <div id="contact" class="paddsection">
+        <div class="container">
+          <div class="contact-block1">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="contact-contact">
+                  <h2 class="mb-30">GET IN TOUCH</h2>
+
+                  <ul class="contact-details">
+                    <li><span>Acacia Estates</span></li>
+                    <li><span>Manila, Philippines</span></li>
+                    <li><span>+63 9267319884</span></li>
+                    <li><span>bayoda.ca@gmail.com</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <form
+                  action="forms/contact.php"
+                  method="post"
+                  role="form"
+                  class="php-email-form"
+                >
+                  <div class="row gy-3">
+                    <div class="col-lg-6">
+                      <div class="form-group contact-block1">
+                        <input
+                          type="text"
+                          name="name"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your Name"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          id="email"
+                          placeholder="Your Email"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="subject"
+                          id="subject"
+                          placeholder="Subject"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          placeholder="Message"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">
+                        Your message has been sent. Thank you!
+                      </div>
+                    </div>
+
+                    <div class="mt-0">
+                      <input
+                        type="submit"
+                        class="btn btn-defeault btn-send"
+                        value="Send message"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <div id="footer" class="text-center">
+      <div class="container">
+        <div class="socials-media text-center">
+          <ul class="list-unstyled">
+            <!--<li>
+              <a href="https://www.facebook.com/clairebyd/"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/cbayoda"
+                ><i class="bi bi-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/codewithclaire/"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>-->
+            <li>
+              <a href="www.linkedin.com/in/claire-bayoda-psm-005b8591"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <p>&copy; Copyrights 2024. All rights reserved.</p>
+
+        <div class="credits">
+          <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+      -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+        </div>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
