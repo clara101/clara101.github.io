@@ -31,9 +31,10 @@
                     <button class="hire">
                         Hire me <i class="fas fa-plus"></i>
                     </button>
-                    <button class="email">
+                    <button id="btnCopy" class="email">
                         Copy Email <i class="far fa-copy"></i>
                     </button>
+                    
                 </div>
             </div>
         </div>
@@ -114,6 +115,22 @@
         </div>
         <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a>
     </footer>
+
+    <script>
+        function copyToClipboard(text) {
+            const textarea = document.createElement("textarea");
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("Copied to clipboard! You may email at devclaire92@gmail.com");
+        }   
+
+    document.getElementById("btnCopy").addEventListener("click", function() {
+        copyToClipboard("devclaire92@gmail.com");
+    });
+    </script>
 
 </body>
 
